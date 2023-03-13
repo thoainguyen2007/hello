@@ -1,6 +1,7 @@
-import pickle
+import streamlit as st
 
-filename = 'model.pickle'
-
-pickle.dump(model, open(filename, "wb"))
-model = pickle.load(open(filename, "rb"))
+st.title("REVENUE PREDICTION")
+a = st.number_input('Input Temperature')
+if st.button(''):
+  st.caption('Revenue predicttion')
+  st.success('n')
